@@ -1,8 +1,25 @@
 aid: ecoplanet
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ecoplanet.png
 name: ecoplanet
-description: 'ecoplanet is a company surfaced as a portfolio company of eqt-ventures, hv-capital and added
-  to the API Evangelist network as a stub for enrichment. Sector: climate. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'ecoplanet provides cloud-based, integrated energy management software for German
+  mid-market companies. The platform combines three core functions: real-time consumption monitoring
+  through meter integration with AI-powered anomaly detection and automated load-shifting on price
+  signals; strategic energy procurement using algorithmic purchasing across spot markets, tranches,
+  and power purchase agreements (PPAs); and automated ISO 50001 compliance documentation. The company
+  reports customers achieve up to 15% consumption savings and ~13.9% average price advantages on energy
+  purchases. Backed by EQT Ventures and HV Capital. No public developer/API surface was found at the
+  time of profiling.'
 url: https://raw.githubusercontent.com/api-evangelist/ecoplanet/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Climate
+- Energy
+- Energy Management
+- Sustainability
+- ISO 50001
+- Energy Procurement
+- Software
+- Germany
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +48,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ecoplanet-domain-security.yml
 - type: Website
-  url: http://www.ecoplanet.tech
+  url: https://www.ecoplanet.tech
+- type: Blog
+  url: https://www.ecoplanet.tech/ressourcen/blog
+- type: Support
+  url: https://www.ecoplanet.tech/support
+- type: Login
+  url: https://app.ecoplanet.tech/login
+- type: PrivacyPolicy
+  url: https://www.ecoplanet.tech/datenschutz
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
